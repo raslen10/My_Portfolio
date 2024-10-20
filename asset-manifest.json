@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/My_Portfolio/static/css/main.20be58fb.css",
+    "main.js": "/My_Portfolio/static/js/main.e360abca.js",
+    "static/media/Scouting_Dashboard.png": "/My_Portfolio/static/media/Scouting_Dashboard.0d8fdd44a80db775e1d7.png",
+    "static/media/wirtz_musiala.png": "/My_Portfolio/static/media/wirtz_musiala.03ab556eb563abfb77a3.png",
+    "static/media/deug.png": "/My_Portfolio/static/media/deug.15d66c74ad37a35ddab5.png",
+    "static/media/bvb.png": "/My_Portfolio/static/media/bvb.668f08216fb769ef9649.png",
+    "index.html": "/My_Portfolio/index.html",
+    "main.20be58fb.css.map": "/My_Portfolio/static/css/main.20be58fb.css.map",
+    "main.e360abca.js.map": "/My_Portfolio/static/js/main.e360abca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20be58fb.css",
+    "static/js/main.e360abca.js"
+  ]
+}
