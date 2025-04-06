@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Raslen Guesmi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Raslen Guesmi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/PHOTO.jpg" alt="Raslen Guesmi profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Raslen Guesmi</h1>
+        <p class="section__text__p2">AI Engineer | Data Scientist</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Raslen_Guesmi_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/raslen-guesmi'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/raslen10'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/ai.png"
+            alt="Profile picture"
+            class="about-pic"
+            style="width: 400px;" 
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years <br />AI Engineer - Data scientist</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelor's Degree in applied mathematics<br />M.Sc. Master's Degree in Data Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Results-oriented Data Scientist with over 1 year of experience in machine learning, 
+              data engineering, and analytics. Skilled in developing end-to-end solutions for complex 
+              problems, including AI applications, dashboards, and predictive modeling.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Engineering</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>SQL (MySQL & PostgreSQL)</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>ETL & Airflow</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>BigQuery & DBT</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">AI & Machine Learning</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Machine Learning (Clustering, Classification, Regression)</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Time Series (LSTM, ARIMA)</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>NLP & LLM</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Computer Vision (Mediapipe, YOLO, CNN)</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Visualization</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Python (Matplotlib, Seaborn)</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Power BI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Tableau</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Excel & Looker</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Engineering</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Python (OOP)</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Docker</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Flask & FastAPI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Git & GitHub</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/resume_app.png"
+                alt="RESUME SCREENING WEB APP"
+                class="project-img"
+                
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">RESUME SCREENING WEB APP</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/raslen10/Resume_Classification'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/raslen10/Resume_Classification/tree/main/Demo'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/rag_pdf.png"
+                alt="Project 2"
+                class="project-img"
+                
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">SCALABLE RAG PIPELINE FOR PDF QUESTION ANSWERING</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/raslen10/PDF-RAG-Pipeline'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/verbal.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Verbal Communication Skills Trainer</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/raslen10/Verbal-Communication-Skills-Trainer'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/raslen10/Verbal-Communication-Skills-Trainer/blob/main/Demo_App.zip'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Newsfeed Analysis Dashboard.png"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Newsfeed Analysis Using Tableau</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/raslen10/Dashboard_Projects/tree/main/Newsfeed%20Analysis%20in%20Tableau%20Project'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/raslen10/Dashboard_Projects/blob/main/Newsfeed%20Analysis%20in%20Tableau%20Project/Newsfeed%20Analysis%20Dashboard.png'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Bouton "Voir plus" -->
+  <div class="see-more-container">
+    <button
+      class="btn btn-color-2 see-more-btn"
+      onclick="location.href='./projects_page.html'"
+    >
+      See More
+    </button>
+  </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <!-- Email -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:guesmiraslen2@gmail.com">guesmiraslen2@gmail.com</a></p>
+        </div>
+    
+        <!-- LinkedIn -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/raslen-guesmi">LinkedIn</a></p>
+        </div>
+    
+        <!-- Téléphone -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone.png" 
+            alt="Phone icon"
+            class="icon contact-icon"
+          />
+          <p><a href="tel:+216">(216) 54930176</a></p> <!-- Remplacez +222222222 par votre numéro de téléphone complet avec l'indicatif pays -->
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 RG. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
