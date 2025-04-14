@@ -124,6 +124,15 @@ const projects = [
     github: "https://github.com/raslen10/Football_Data_Projects/tree/main/UEFA-Champions-League-Producing-Soccer-Insights-for-a-Sports-Media-Agency",
     demo: "https://github.com/raslen10/Football_Data_Projects/blob/main/UEFA-Champions-League-Producing-Soccer-Insights-for-a-Sports-Media-Agency/notebook.ipynb",
     keywords: ["SQL", "Snowflake", "Football Analysis"]
+  },
+  {
+    title: "Bank Marketing Data Cleaning Project",
+    image: "./assets/piggy_bank.jpg",
+    domain: "marketing",
+    role: "data-engineer",
+    github: "https://github.com/raslen10/Data_engineering_projects/tree/main/Cleaning%20Bank%20Marketing%20Campaign%20Data",
+    demo: "https://github.com/raslen10/Data_engineering_projects/tree/main/Cleaning%20Bank%20Marketing%20Campaign%20Data/notebook.ipynb",
+    keywords: ["Data Cleaning", "Data Validation", "Marketing Data"]
   }
 ];
 
