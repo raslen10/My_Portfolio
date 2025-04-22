@@ -133,6 +133,24 @@ const projects = [
     github: "https://github.com/raslen10/Data_engineering_projects/tree/main/Cleaning%20Bank%20Marketing%20Campaign%20Data",
     demo: "https://github.com/raslen10/Data_engineering_projects/tree/main/Cleaning%20Bank%20Marketing%20Campaign%20Data/notebook.ipynb",
     keywords: ["Data Cleaning", "Data Validation", "Marketing Data"]
+  },
+  {
+    title: "RAG-Powered Research Assistant",
+    image: "./assets/research.jpg",
+    domain: "Others",
+    role: "ai-eng",
+    github: "https://github.com/raslen10/The-Enigmatic-Research-of-Dr.-X",
+    demo: "https://drive.google.com/file/d/1yX9VkqfkSt9mo0t_bSUh4xAiJfBi6DtL/view?usp=sharing",
+    keywords: ["RAG", "LLAMA3", "ChromaDB", "Streamlit", "OLLAMA", "nomic-embed-text"]
+  },
+  {
+    title: "Benchmarking CV Extraction with Flask and Retrieval-Augmented LLMs",
+    image: "./assets/cv_extractor.png",
+    domain: "HR",
+    role: "ai-eng",
+    github: "https://github.com/raslen10/cv_extractor",
+    demo: "https://github.com/raslen10/cv_extractor",
+    keywords: ["RAG", "LLAMA3", "ChromaDB", "FLASK", "Mistral"," PHI", "OLLAMA"]
   }
 ];
 
