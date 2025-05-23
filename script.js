@@ -151,6 +151,15 @@ const projects = [
     github: "https://github.com/raslen10/cv_extractor",
     demo: "https://github.com/raslen10/cv_extractor",
     keywords: ["RAG", "LLAMA3", "ChromaDB", "FLASK", "Mistral"," PHI", "OLLAMA"]
+  },
+  {
+    title: "Companies ETL Pipeline - Web Scraping",
+    image: "./assets/capture.png",
+    domain: "others",
+    role: "data-engineer",
+    github: "https://github.com/raslen10/Data_engineering_projects/tree/main/Companies_ETL_Pipeline",
+    demo: "https://github.com/raslen10/Data_engineering_projects/blob/main/Companies_ETL_Pipeline/Etl_pipeline.py",
+    keywords: ["Web Scraping", "Python", "MySQL", "Finance Data"]
   }
 ];
 
