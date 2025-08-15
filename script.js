@@ -154,7 +154,7 @@ const projects = [
   },
   {
     title: "Companies ETL Pipeline - Web Scraping",
-    image: "./assets/capture.png",
+    image: "./assets/capture.PNG",
     domain: "others",
     role: "data-engineer",
     github: "https://github.com/raslen10/Data_engineering_projects/tree/main/Companies_ETL_Pipeline",
