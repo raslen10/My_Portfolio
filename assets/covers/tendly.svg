@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Tendly - Global Scraping Pipelines">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14b8a6"/><stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity=".45"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 H0 V40" fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect width="800" height="450" fill="url(#grid)"/>
+  <circle cx="700" cy="70" r="150" fill="#fff" opacity=".08"/>
+  <circle cx="90" cy="410" r="110" fill="#000" opacity=".10"/>
+  <rect width="800" height="450" fill="url(#fade)"/>
+  <g transform="translate(560,120) scale(1.05)"><g opacity=".9" stroke="#fff" stroke-width="4" fill="none"><circle cx="80" cy="100" r="72"/><ellipse cx="80" cy="100" rx="30" ry="72"/><path d="M12 76 H148 M12 124 H148 M8 100 H152"/></g></g>
+  <g transform="translate(56,300)">
+    <rect x="0" y="-46" width="149" height="30" rx="15" fill="#000" opacity=".28"/>
+    <text x="14" y="-25" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="15" letter-spacing="2" fill="#fff" opacity=".9">CLOUD RUN / ETL</text>
+    <text x="0" y="24" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="52" font-weight="700" fill="#fff">Tendly</text>
+    <text x="0" y="66" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="26" fill="#fff" opacity=".9">Global Scraping Pipelines</text>
+  </g>
+</svg>

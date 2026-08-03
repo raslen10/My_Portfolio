@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="GPT-4-mini - Supervised Fine-Tuning">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity=".45"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 H0 V40" fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect width="800" height="450" fill="url(#grid)"/>
+  <circle cx="700" cy="70" r="150" fill="#fff" opacity=".08"/>
+  <circle cx="90" cy="410" r="110" fill="#000" opacity=".10"/>
+  <rect width="800" height="450" fill="url(#fade)"/>
+  <g transform="translate(560,120) scale(1.05)"><g opacity=".9" stroke="#fff" stroke-width="4" fill="none"><path d="M80 34 C50 34 38 54 44 72 C24 84 28 116 48 124 C46 152 72 168 90 154 C114 164 136 144 130 122 C150 108 146 74 124 68 C122 44 100 28 80 34 Z"/><circle cx="66" cy="78" r="7" fill="#fff"/><circle cx="104" cy="96" r="7" fill="#fff"/><circle cx="80" cy="128" r="7" fill="#fff"/><path d="M66 78 L104 96 L80 128"/></g></g>
+  <g transform="translate(56,300)">
+    <rect x="0" y="-46" width="122" height="30" rx="15" fill="#000" opacity=".28"/>
+    <text x="14" y="-25" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="15" letter-spacing="2" fill="#fff" opacity=".9">LLM TRAINING</text>
+    <text x="0" y="24" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="52" font-weight="700" fill="#fff">GPT-4-mini</text>
+    <text x="0" y="66" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="26" fill="#fff" opacity=".9">Supervised Fine-Tuning</text>
+  </g>
+</svg>

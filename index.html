@@ -4,197 +4,448 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Raslen Guesmi | Portfolio</title>
+    <title>Raslen Guesmi | AI Engineer — LLM Fine-Tuning, RL & MLOps</title>
+    <meta
+      name="description"
+      content="Raslen Guesmi — AI/ML Engineer specialised in LLM fine-tuning, reinforcement learning and MLOps across fintech, health-tech, marketing, energy and football analytics."
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
-    <!-- Navigation -->
-    <nav id="desktop-nav">
-      <div class="logo">Raslen Guesmi</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Raslen Guesmi</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <ul class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div class="bg-orbs" aria-hidden="true">
+      <span class="orb orb-1"></span>
+      <span class="orb orb-2"></span>
+      <span class="orb orb-3"></span>
+    </div>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
-    <!-- Profile Section -->
+    <!-- Navigation -->
+    <header class="nav-shell">
+      <nav id="desktop-nav" aria-label="Main navigation">
+        <a href="#profile" class="logo">
+          <span class="logo-mark">RG</span>
+          <span class="logo-text">Raslen Guesmi</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle colour theme"
+            title="Toggle light / dark"
+          >
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <a class="btn btn-ghost btn-sm" href="./assets/Raslen_Guesmi_CV_AIEngineer.pdf" target="_blank" rel="noopener">
+            <i class="fa-solid fa-file-arrow-down"></i> CV
+          </a>
+        </div>
+      </nav>
+
+      <nav id="hamburger-nav" aria-label="Mobile navigation">
+        <a href="#profile" class="logo">
+          <span class="logo-mark">RG</span>
+          <span class="logo-text">Raslen Guesmi</span>
+        </a>
+        <div class="hamburger-menu">
+          <button class="hamburger-icon" onclick="toggleMenu()" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li>
+              <a href="./assets/Raslen_Guesmi_CV_AIEngineer.pdf" target="_blank" rel="noopener" onclick="toggleMenu()">Download CV</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/PHOTO.PNG" alt="Raslen Guesmi profile picture" />
+      <div class="hero-grid">
+        <div class="section__text reveal">
+          <p class="eyebrow"><span class="dot-live"></span> Available for AI/ML roles &amp; contracts — EU relocation possible</p>
+          <h1 class="title hero-title">
+            Raslen <span class="grad-text">Guesmi</span>
+          </h1>
+          <p class="section__text__p2">
+            AI Engineer — <span class="type-target" id="typewriter"></span><span class="caret">|</span>
+          </p>
+          <p class="hero-summary">
+            I build production AI systems end to end: supervised fine-tuning of LLMs, live
+            multi-agent reinforcement-learning trading swarms, hierarchical RAG pipelines, and the
+            MLOps around them — training-data pipelines, Docker, CI/CD and cloud GPU workflows on
+            AWS &amp; GCP. Applied across <strong>fintech</strong>, <strong>health-tech</strong>,
+            <strong>marketing</strong>, <strong>energy</strong> and <strong>football analytics</strong>.
+          </p>
+
+          <div class="btn-container">
+            <a class="btn btn-color-2" href="./assets/Raslen_Guesmi_CV_AIEngineer.pdf" target="_blank" rel="noopener">
+              <i class="fa-solid fa-file-arrow-down"></i> Download CV
+            </a>
+            <a class="btn btn-color-1" href="#projects">
+              <i class="fa-solid fa-diagram-project"></i> View Projects
+            </a>
+          </div>
+
+          <div id="socials-container">
+            <a href="https://linkedin.com/in/raslen-guesmi" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-pill">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/raslen10" target="_blank" rel="noopener" aria-label="GitHub" class="social-pill">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:guesmiraslen2@gmail.com" aria-label="Email" class="social-pill">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:+21640309961" aria-label="Phone" class="social-pill">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="section__pic-container reveal">
+          <div class="avatar-wrap">
+            <img src="./assets/PHOTO.PNG" alt="Raslen Guesmi profile picture" />
+            <div class="avatar-glow" aria-hidden="true"></div>
+          </div>
+          <div class="floating-chip chip-1"><i class="fa-solid fa-robot"></i> LLM Fine-Tuning</div>
+          <div class="floating-chip chip-2"><i class="fa-solid fa-brain"></i> Multi-Agent RL</div>
+          <div class="floating-chip chip-3"><i class="fa-solid fa-infinity"></i> MLOps</div>
+        </div>
       </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Raslen Guesmi</h1>
-        <p class="section__text__p2">AI Engineer | Data Scientist</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/CV_Raslen_Guesmi.pdf')">
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <a href="https://linkedin.com/in/raslen-guesmi">
-            <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" />
-          </a>
-          <a href="https://github.com/raslen10">
-            <img src="./assets/github.png" alt="GitHub" class="icon" />
-          </a>
-        </div>
+
+      <div class="stats-strip reveal">
+        <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">Years building AI in production</span></div>
+        <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">Exchanges in live RL trading swarm</span></div>
+        <div class="stat"><span class="stat-num" data-count="10" data-suffix="+">0</span><span class="stat-label">Countries in scraping pipelines</span></div>
+        <div class="stat"><span class="stat-num" data-count="40" data-suffix="%→5%">0</span><span class="stat-label">Onboarding drop-off cut at Evely</span></div>
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
+      <p class="section__text__p1">Get to know more</p>
       <h1 class="title">About Me</h1>
+
       <div class="section-container">
-        <div class="section__pic-container">
-          <img src="./assets/ai.png" alt="Profile picture" class="about-pic" />
+        <div class="about-figure reveal">
+          <img src="./assets/ai.png" alt="AI illustration" class="about-pic" />
         </div>
+
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container">
-              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <div class="details-container reveal">
+              <i class="fa-solid fa-briefcase card-icon"></i>
               <h3>Experience</h3>
-              <p>2 years <br />AI Engineer - Data Scientist</p>
+              <p>3+ years<br />AI Engineer · Data Scientist</p>
             </div>
-            <div class="details-container">
-              <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <div class="details-container reveal">
+              <i class="fa-solid fa-graduation-cap card-icon"></i>
               <h3>Education</h3>
-              <p>B.Sc. Applied Mathematics<br />M.Sc. Data Science</p>
+              <p>MSc Data Science<br />BSc Applied Mathematics</p>
+            </div>
+            <div class="details-container reveal">
+              <i class="fa-solid fa-location-dot card-icon"></i>
+              <h3>Based in</h3>
+              <p>Hammamet, Tunisia<br />Remote · open to EU relocation</p>
             </div>
           </div>
-          <div class="text-container">
+
+          <div class="text-container reveal">
             <p>
-              Results-oriented Data Scientist with experience in machine learning, 
-              data engineering, and analytics. Skilled in developing end-to-end solutions for complex 
-              problems, including AI applications, dashboards, and predictive modeling.
+              AI/ML engineer with hands-on <strong>LLM fine-tuning</strong> experience (supervised
+              fine-tuning of GPT-4-mini for a production use case) and applied
+              <strong>reinforcement learning</strong> work: Q-Learning / SARSA policy experiments and
+              live multi-agent RL trading swarms orchestrated end to end and tracked in MLflow.
             </p>
+            <p>
+              Full <strong>MLOps</strong> practice — training-data pipelines, containerised
+              deployment, CI/CD and cloud GPU workflows on AWS/GCP — applied across fintech,
+              health-tech, marketing and energy. I'm comfortable owning systems end to end, from data
+              curation through evaluation, deployment and product analytics.
+            </p>
+            <p>
+              Outside of client work I'm a <strong>football data</strong> nerd: scouting dashboards,
+              xG and shot-map comparisons, and Poisson models for league standings.
+            </p>
+            <div class="lang-row">
+              <span class="lang-badge">English <b>C1</b></span>
+              <span class="lang-badge">French <b>Fluent</b></span>
+              <span class="lang-badge">Arabic <b>Native</b></span>
+              <span class="lang-badge">German <b>A2 → B1</b></span>
+            </div>
           </div>
         </div>
       </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
     </section>
 
-    <!-- Experience Section -->
+    <!-- Skills -->
+    <section id="skills">
+      <p class="section__text__p1">What I work with</p>
+      <h1 class="title">Technical Skills</h1>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-head"><i class="fa-solid fa-wand-magic-sparkles"></i><h2>LLM &amp; Fine-Tuning</h2></div>
+          <div class="tag-cloud">
+            <span>Supervised fine-tuning (GPT-4-mini)</span><span>RAG</span><span>Hierarchical RAG</span>
+            <span>LangChain</span><span>LangGraph</span><span>Multi-agent orchestration</span>
+            <span>MCP servers</span><span>Prompt &amp; agent evaluation</span><span>pgvector · HNSW</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-head"><i class="fa-solid fa-brain"></i><h2>ML &amp; Deep Learning</h2></div>
+          <div class="tag-cloud">
+            <span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>Scikit-learn</span>
+            <span>LSTM</span><span>CNN</span><span>Q-Learning</span><span>SARSA</span>
+            <span>Multi-agent RL</span><span>ARIMA · Time series</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-head"><i class="fa-solid fa-database"></i><h2>Data Engineering</h2></div>
+          <div class="tag-cloud">
+            <span>Airflow</span><span>PySpark</span><span>dbt</span><span>PostgreSQL</span>
+            <span>Supabase</span><span>MongoDB</span><span>Feature pipelines</span>
+            <span>Cleaning &amp; dedup</span><span>Web scraping</span><span>SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-head"><i class="fa-solid fa-cloud"></i><h2>Cloud &amp; MLOps</h2></div>
+          <div class="tag-cloud">
+            <span>AWS</span><span>GCP · Cloud Run</span><span>Docker</span>
+            <span>GitHub Actions CI/CD</span><span>MLflow</span><span>Coolify</span>
+            <span>Hostinger VPS</span><span>Linux</span><span>Git</span><span>Azure ML / AI Foundry</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-head"><i class="fa-solid fa-code"></i><h2>Software &amp; APIs</h2></div>
+          <div class="tag-cloud">
+            <span>Python (OOP)</span><span>FastAPI</span><span>Flask</span><span>FastHTML</span>
+            <span>Streamlit</span><span>REST APIs</span><span>Flutter (client)</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-head"><i class="fa-solid fa-chart-line"></i><h2>Analytics &amp; Visualisation</h2></div>
+          <div class="tag-cloud">
+            <span>Amplitude</span><span>Meta Pixel &amp; Conversions API</span><span>Funnel instrumentation</span>
+            <span>Tableau</span><span>Power BI</span><span>Matplotlib · Seaborn</span><span>Excel · Looker</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
+      <p class="section__text__p1">Where I've delivered</p>
       <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Data Engineering</h2>
-            <div class="article-container">
-              <article><img src="./assets/checkmark.png" alt="Icon" class="icon" /><div><h3>Python</h3><p>Experienced</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Icon" class="icon" /><div><h3>SQL (MySQL & PostgreSQL)</h3><p>Experienced</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Icon" class="icon" /><div><h3>ETL & Airflow</h3><p>Intermediate</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Icon" class="icon" /><div><h3>BigQuery & DBT</h3><p>Intermediate</p></div></article>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fa-solid fa-heart-pulse"></i></div>
+          <div class="timeline-card">
+            <div class="tl-head">
+              <div>
+                <h3>Senior Consultant — Evely <span class="tl-link"><a href="https://evely.health" target="_blank" rel="noopener">evely.health</a></span></h3>
+                <p class="tl-meta">Miami, USA (Remote) · Health-tech</p>
+              </div>
+              <span class="tl-date current">Jun 2026 – Present</span>
             </div>
+            <ul>
+              <li>Migrated the platform from <strong>Next.js to FastHTML + FastAPI</strong> and from Vercel to a self-hosted <strong>Coolify / Hostinger VPS</strong> stack, owning the full deployment pipeline and CI/CD.</li>
+              <li>Redesigned onboarding UI/UX and built an <strong>Amplitude</strong> analytics dashboard to track the funnel — cut drop-off from <strong>40% to 5–10%</strong>.</li>
+              <li>Optimised the <strong>Gemini-powered AI report</strong> feature: tuned prompts and added fallback-model handling for faster, more reliable generation.</li>
+              <li>Restructured the <strong>PostgreSQL</strong> schema and queries for dashboard/reporting performance; resolved <strong>Supabase RLS</strong> security vulnerabilities.</li>
+            </ul>
+            <div class="tl-tags"><span>FastAPI</span><span>FastHTML</span><span>Gemini</span><span>PostgreSQL</span><span>Supabase</span><span>Amplitude</span><span>Coolify</span></div>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">AI & Machine Learning</h2>
-            <div class="article-container">
-              <article><img src="./assets/checkmark.png" alt="Icon" class="icon" /><div><h3>Machine Learning</h3><p>Intermediate</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Icon" class="icon" /><div><h3>Time Series (LSTM, ARIMA)</h3><p>Intermediate</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Icon" class="icon" /><div><h3>NLP & LLM</h3><p>Intermediate</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Icon" class="icon" /><div><h3>Computer Vision</h3><p>Intermediate</p></div></article>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="timeline-card">
+            <div class="tl-head">
+              <div>
+                <h3>AI Engineer | Data Scientist — PredictiveLabs</h3>
+                <p class="tl-meta">Remote, London UK · Financial sector</p>
+              </div>
+              <span class="tl-date current">Jun 2025 – Present</span>
             </div>
+            <ul>
+              <li><strong>Finespresso</strong> (Jun 2025–Present): trained and evaluated <strong>Q-Learning and SARSA</strong> policies to optimise trading decisions, then built and deployed a <strong>live multi-agent RL swarm across four exchanges on AWS</strong> with coordinated decision-making and risk controls — every run tracked in <strong>MLflow</strong> (accuracy, R², PnL).</li>
+              <li><strong>AssetHero</strong> (assethero.chat, Jan 2026–Present): built the <strong>API orchestration layer</strong> unifying four independent trading agent apps — AlpaTrade, TradeSwarm, MacroHero, PolyTrade — each in its own repo, into a single callable multi-agent trading product, deployed via <strong>Docker on GCP Cloud Run</strong>.</li>
+              <li><strong>Tendly</strong> (2026): built scheduled data-scraping pipelines across <strong>10+ countries</strong>, deployed as GCP Cloud Run jobs.</li>
+              <li><strong>POLLY</strong> (May–Aug 2026, polly.predictivelabs.ai): built a <strong>hierarchical RAG pipeline</strong> (pgvector, HNSW, chunking, embeddings, metadata) and LangChain/LangGraph agents, packaged as an <strong>MCP server</strong>, behind a compliance-aware AI marketing platform deployed via Docker on Coolify.</li>
+              <li>Built training-data <strong>ETL pipelines</strong> (news, market data) into a near-real-time PostgreSQL <strong>feature store</strong>, with cleaning, structuring and feature extraction via LLM/RAG pipelines.</li>
+            </ul>
+            <div class="tl-tags"><span>Reinforcement Learning</span><span>MLflow</span><span>AWS</span><span>GCP Cloud Run</span><span>LangGraph</span><span>pgvector</span><span>Docker</span></div>
           </div>
-        </div>
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Data Visualization</h2>
-            <div class="article-container">
-              <article><img src="./assets/checkmark.png" alt="Icon" class="icon" /><div><h3>Python (Matplotlib, Seaborn)</h3><p>Experienced</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Icon" class="icon" /><div><h3>Power BI</h3><p>Intermediate</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Icon" class="icon" /><div><h3>Tableau</h3><p>Experienced</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Icon" class="icon" /><div><h3>Excel & Looker</h3><p>Intermediate</p></div></article>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="timeline-card">
+            <div class="tl-head">
+              <div>
+                <h3>Freelance AI/ML Engineer — Upwork <span class="badge-top">Top Rated</span></h3>
+                <p class="tl-meta">Remote · Multiple clients</p>
+              </div>
+              <span class="tl-date current">Jan 2025 – Present</span>
             </div>
+            <ul>
+              <li><strong>Fine-tuned GPT-4-mini</strong> (supervised fine-tuning) for a digital-creator client: curated and formatted training data, ran the fine-tuning job, and evaluated output against a target tone and topic set (brand deals, monetisation, mindset).</li>
+              <li>Built structured <strong>JSON training datasets</strong> and data-prep pipelines for multiple clients' GPT fine-tuning projects.</li>
+            </ul>
+            <div class="tl-tags"><span>OpenAI fine-tuning</span><span>Dataset curation</span><span>Evaluation</span></div>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Software Engineering</h2>
-            <div class="article-container">
-              <article><img src="./assets/checkmark.png" alt="Icon" class="icon" /><div><h3>Python (OOP)</h3><p>Experienced</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Icon" class="icon" /><div><h3>Docker</h3><p>Intermediate</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Icon" class="icon" /><div><h3>Flask & FastAPI</h3><p>Intermediate</p></div></article>
-              <article><img src="./assets/checkmark.png" alt="Icon" class="icon" /><div><h3>Git & GitHub</h3><p>Experienced</p></div></article>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fa-solid fa-bolt"></i></div>
+          <div class="timeline-card">
+            <div class="tl-head">
+              <div>
+                <h3>Data Science Engineer | ML Engineer — 4InaTechnology</h3>
+                <p class="tl-meta">Manouba, Tunisia · Energy sector</p>
+              </div>
+              <span class="tl-date">Feb 2024 – Aug 2024</span>
             </div>
+            <ul>
+              <li>Trained <strong>LSTM and ARIMA</strong> models from scratch on sensor and electrical-load data for energy consumption forecasting.</li>
+              <li>Built the MVP end to end: <strong>FastAPI</strong> backend serving the model, <strong>Flutter</strong> web/mobile client, containerised with Docker and deployed on Coolify.</li>
+            </ul>
+            <div class="tl-tags"><span>LSTM</span><span>ARIMA</span><span>FastAPI</span><span>Flutter</span><span>Docker</span></div>
           </div>
-        </div>
+        </article>
       </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects -->
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
+      <p class="section__text__p1">Browse my recent</p>
       <h1 class="title">Projects</h1>
-      <div class="filter-container">
-        <div class="filter-group">
-          <h3>Filter by Domain</h3>
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="sport">Sports</button>
-          <button class="filter-btn" data-filter="HR">HR</button>
-          <button class="filter-btn" data-filter="energy">Energy</button>
-          <button class="filter-btn" data-filter="marketing">Marketing</button>
-          <button class="filter-btn" data-filter="others">Others</button>
-        </div>
-        <div class="filter-group">
-          <h3>Filter by Role</h3>
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="data-engineer">Data Engineer</button>
-          <button class="filter-btn" data-filter="data-analyst">Data Analyst</button>
-          <button class="filter-btn" data-filter="data-scientist">Data Scientist</button>
-          <button class="filter-btn" data-filter="ai-eng">AI Engineer</button>
-        </div>
-      </div>
-      <div class="projects-grid" id="projects-grid"></div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon" />
-          <p><a href="mailto:guesmiraslen2@gmail.com">guesmiraslen2@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-          <p><a href="https://www.linkedin.com/in/raslen-guesmi">LinkedIn</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img src="./assets/phone.png" alt="Phone icon" class="icon contact-icon" />
-          <div>
-            <p><a href="tel:+21654930176">+216 54930176</a></p>
-            <p><a href="tel:+21640309961">+216 40309961</a></p>
+      <div class="filter-container">
+        <div class="filter-group" data-filter-type="domain">
+          <h3><i class="fa-solid fa-layer-group"></i> Filter by domain</h3>
+          <div class="filter-btns">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="finance">Finance &amp; Trading</button>
+            <button class="filter-btn" data-filter="llm">LLM &amp; AI Agents</button>
+            <button class="filter-btn" data-filter="sport">Football</button>
+            <button class="filter-btn" data-filter="health">Health</button>
+            <button class="filter-btn" data-filter="marketing">Marketing</button>
+            <button class="filter-btn" data-filter="energy">Energy</button>
+            <button class="filter-btn" data-filter="HR">HR</button>
+            <button class="filter-btn" data-filter="others">Others</button>
           </div>
         </div>
-        
+        <div class="filter-group" data-filter-type="role">
+          <h3><i class="fa-solid fa-user-gear"></i> Filter by role</h3>
+          <div class="filter-btns">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ai-eng">AI Engineer</button>
+            <button class="filter-btn" data-filter="data-scientist">Data Scientist</button>
+            <button class="filter-btn" data-filter="data-engineer">Data Engineer</button>
+            <button class="filter-btn" data-filter="data-analyst">Data Analyst</button>
+          </div>
+        </div>
+        <div class="filter-group search-group">
+          <h3><i class="fa-solid fa-magnifying-glass"></i> Search</h3>
+          <input type="search" id="project-search" placeholder="e.g. RAG, LSTM, Tableau…" aria-label="Search projects" />
+        </div>
+      </div>
+
+      <p class="results-count" id="results-count"></p>
+      <div class="projects-grid" id="projects-grid"></div>
+      <p class="no-results" id="no-results" hidden>No projects match those filters — try clearing the search.</p>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <p class="section__text__p1">Foundations</p>
+      <h1 class="title">Education &amp; Certifications</h1>
+
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <h3>MSc Data Science</h3>
+          <p>University of Bizerte, Tunisia</p>
+          <span class="edu-date">2021 – 2023</span>
+        </div>
+        <div class="edu-card reveal">
+          <i class="fa-solid fa-square-root-variable"></i>
+          <h3>BSc Applied Mathematics</h3>
+          <p>University of Bizerte, Tunisia</p>
+          <span class="edu-date">2018 – 2021</span>
+        </div>
+        <div class="edu-card certs reveal">
+          <i class="fa-solid fa-certificate"></i>
+          <h3>Certifications</h3>
+          <ul>
+            <li>Intro to AI — University of Helsinki</li>
+            <li>Intro to MLflow — DataCamp</li>
+            <li>Power BI Job Simulation — PwC Switzerland (Forage)</li>
+            <li>Web Scraping in Python — DataCamp</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <p class="section__text__p1">Get in touch</p>
+      <h1 class="title">Contact Me</h1>
+      <p class="contact-lead reveal">
+        Open to AI/ML engineering roles and contracts — remote, or on-site in the EU.
+      </p>
+
+      <div class="contact-info-upper-container">
+        <a class="contact-info-container reveal" href="mailto:guesmiraslen2@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <div><h4>Email</h4><p>guesmiraslen2@gmail.com</p></div>
+        </a>
+        <a class="contact-info-container reveal" href="https://www.linkedin.com/in/raslen-guesmi" target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <div><h4>LinkedIn</h4><p>in/raslen-guesmi</p></div>
+        </a>
+        <a class="contact-info-container reveal" href="https://github.com/raslen10" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+          <div><h4>GitHub</h4><p>github.com/raslen10</p></div>
+        </a>
+        <a class="contact-info-container reveal" href="tel:+21640309961">
+          <i class="fa-solid fa-phone"></i>
+          <div><h4>Phone</h4><p>+216 40 309 961<br />+216 54 930 176</p></div>
+        </a>
       </div>
     </section>
 
@@ -203,13 +454,19 @@
       <nav>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <p>Copyright &copy; 2025 Raslen Guesmi. All Rights Reserved.</p>
+      <p>&copy; 2026 Raslen Guesmi — AI Engineer. All rights reserved.</p>
     </footer>
+
+    <a href="#profile" class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
     <script src="script.js"></script>
   </body>
