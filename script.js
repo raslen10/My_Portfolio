@@ -87,7 +87,7 @@ const projects = [
     badge: "PredictiveLabs",
     pro: true,
     github: "",
-    demo: "https://polly.predictivelabs.ai",
+    demo: "",
     keywords: ["RAG", "pgvector", "HNSW", "LangGraph", "MCP Server", "Docker"]
   },
   {
